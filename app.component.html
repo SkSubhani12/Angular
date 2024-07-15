@@ -1,0 +1,19 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+<button mat-button [matMenuTriggerFor]="aboveMenu"><a routerLink="home">Home</a></button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu"><a routerLink="login">Login</a></button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu"><a routerLink="registration">Registration</a></button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+</mat-menu>
+
+<p>Community Service Project</p>
+
+<router-outlet></router-outlet>
